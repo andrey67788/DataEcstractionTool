@@ -23,3 +23,5 @@ env/
 *.swp
 .DS_Store
 
+test.py
+
