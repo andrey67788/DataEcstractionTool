@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/DataEcstractionTool.iml" filepath="$PROJECT_DIR$/.idea/DataEcstractionTool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/DataExtractionTool.iml" filepath="$PROJECT_DIR$/.idea/DataExtractionTool.iml" />
     </modules>
   </component>
 </project>
