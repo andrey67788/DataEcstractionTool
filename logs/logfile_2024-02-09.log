@@ -1,0 +1,67 @@
+[2024-02-09 08:07:25.932454] PSQL database 'insurance_company' connected
+[2024-02-09 08:09:07.556562] PSQL database 'insurance_company' connected
+[2024-02-09 08:09:07.566331] Data integrity check completed: 100 rows found, 0 null values found.
+[2024-02-09 08:09:07.571700] Data from PSQL extracted and saved to /home/andrey67788/PycharmProjects/DataEcstractionTool/extracted/PSQL_data.csv
+[2024-02-09 08:52:50.584045] PSQL database 'insurance_company' connected
+[2024-02-09 08:52:50.597175] Data integrity check completed: 100 rows found, 0 null values found.
+[2024-02-09 08:52:50.602955] Data from PSQL extracted and saved to /home/andrey67788/PycharmProjects/DataEcstractionTool/extracted/PSQL_data.csv
+[2024-02-09 08:54:08.204733] PSQL database 'insurance_company' connected
+[2024-02-09 08:54:08.222127] Data integrity check completed: 100 rows found, 0 null values found.
+[2024-02-09 08:54:08.228020] Data from PSQL extracted and saved to /home/andrey67788/PycharmProjects/DataEcstractionTool/extracted/PSQL_data.csv
+[2024-02-09 09:13:31.971502] PSQL database 'insurance_company' connected
+[2024-02-09 09:13:32.018974] Error during data integrity check: (psycopg2.errors.UndefinedColumn) column products.name does not exist
+LINE 2: FROM (SELECT products.id AS products_id, products.name AS pr...
+                                                 ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT products.id AS products_id, products.name AS products_name, products.price AS products_price 
+FROM products) AS anon_1]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+[2024-02-09 09:13:32.019047] Data integrity check failed. Aborting extraction.
+[2024-02-09 09:24:57.982543] PSQL database 'insurance_company' connected
+[2024-02-09 09:24:58.162461] Error during data integrity check: (psycopg2.errors.UndefinedColumn) column purchases.customer_id does not exist
+LINE 2: FROM (SELECT purchases.id AS purchases_id, purchases.custome...
+                                                   ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT purchases.id AS purchases_id, purchases.customer_id AS purchases_customer_id, purchases.product_id AS purchases_product_id, purchases.purchase_date AS purchases_purchase_date, purchases.quantity AS purchases_quantity, purchases.total_price AS purchases_total_price 
+FROM purchases) AS anon_1]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+[2024-02-09 09:24:58.163057] Data integrity check failed. Aborting extraction.
+[2024-02-09 09:56:34.507270] PSQL database 'insurance_company' connected
+[2024-02-09 09:56:34.552688] Error during data integrity check: type object 'Purchase' has no attribute 'total_price'
+[2024-02-09 09:56:34.552763] Data integrity check failed. Aborting extraction.
+[2024-02-09 09:57:27.361560] PSQL database 'insurance_company' connected
+[2024-02-09 09:57:27.401225] Error during data integrity check: type object 'Purchase' has no attribute 'total_price'
+[2024-02-09 09:57:27.401312] Data integrity check failed. Aborting extraction.
+[2024-02-09 09:59:12.285589] PSQL database 'insurance_company' connected
+[2024-02-09 09:59:12.312092] Error during data integrity check: (psycopg2.errors.UndefinedColumn) column products.name does not exist
+LINE 2: FROM (SELECT products.id AS products_id, products.name AS pr...
+                                                 ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT products.id AS products_id, products.name AS products_name, products.price AS products_price 
+FROM products) AS anon_1]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+[2024-02-09 09:59:12.312174] Data integrity check failed. Aborting extraction.
+[2024-02-09 10:02:18.565447] PSQL database 'insurance_company' connected
+[2024-02-09 10:02:18.599548] Data integrity check completed for customers: 100 rows found, 0 null values found. Null percentage: 0.00
+[2024-02-09 10:02:18.599610] Data integrity check completed for products: 2 rows found, 0 null values found. Null percentage: 0.00
+[2024-02-09 10:02:18.599619] Data integrity check completed for purchases: 500 rows found, 0 null values found. Null percentage: 0.00
+[2024-02-09 10:02:18.607394] Data from customers table extracted and saved to /home/andrey67788/PycharmProjects/DataEcstractionTool/extracted/customers.csv
+[2024-02-09 10:02:18.659798] Data from products table extracted and saved to /home/andrey67788/PycharmProjects/DataEcstractionTool/extracted/products.csv
+[2024-02-09 10:02:18.691230] Data from purchases table extracted and saved to /home/andrey67788/PycharmProjects/DataEcstractionTool/extracted/purchases.csv
+[2024-02-09 10:06:49.088062] PSQL database 'insurance_company' connected
+[2024-02-09 10:06:49.186507] Data integrity check completed for customers: 100 rows found, 0 null values found. Null percentage: 0.00
+[2024-02-09 10:06:49.186793] Data integrity check completed for products: 2 rows found, 0 null values found. Null percentage: 0.00
+[2024-02-09 10:06:49.186835] Data integrity check completed for purchases: 500 rows found, 0 null values found. Null percentage: 0.00
+[2024-02-09 10:06:49.194527] Data from customers table extracted and saved to /home/andrey67788/PycharmProjects/DataEcstractionTool/extracted/customers.csv
+[2024-02-09 10:06:49.204919] Data from products table extracted and saved to /home/andrey67788/PycharmProjects/DataEcstractionTool/extracted/products.csv
+[2024-02-09 10:06:49.225490] Data from purchases table extracted and saved to /home/andrey67788/PycharmProjects/DataEcstractionTool/extracted/purchases.csv
+[2024-02-09 10:11:05.016659] PSQL database 'insurance_company' connected
+[2024-02-09 10:11:05.046127] Data integrity check completed for customers: 100 rows found, 0 null values found. Null percentage: 0.00
+[2024-02-09 10:11:05.046180] Data integrity check completed for products: 2 rows found, 0 null values found. Null percentage: 0.00
+[2024-02-09 10:11:05.046187] Data integrity check completed for purchases: 500 rows found, 0 null values found. Null percentage: 0.00
+[2024-02-09 10:11:05.051627] Data from customers table extracted and saved to /home/andrey67788/PycharmProjects/DataEcstractionTool/extracted/customers.csv
+[2024-02-09 10:11:05.054974] Data from products table extracted and saved to /home/andrey67788/PycharmProjects/DataEcstractionTool/extracted/products.csv
+[2024-02-09 10:11:05.064602] Data from purchases table extracted and saved to /home/andrey67788/PycharmProjects/DataEcstractionTool/extracted/purchases.csv

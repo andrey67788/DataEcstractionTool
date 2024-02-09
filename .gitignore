@@ -12,8 +12,9 @@ env/
 .idea/
 .vscode/
 
-# Logs and databases
+# Ignore all .log files except those in the logs/ directory
 *.log
+!logs/*.log
 *.sqlite
 
 # Compiled Python files
