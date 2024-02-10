@@ -1,0 +1,159 @@
+[2024-02-10 15:36:03.581094] Error during data integrity check: (psycopg2.errors.UndefinedColumn) column purchases.customer_id does not exist
+LINE 2: FROM (SELECT purchases.id AS purchases_id, purchases.custome...
+                                                   ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT purchases.id AS purchases_id, purchases.customer_id AS purchases_customer_id, purchases.product_id AS purchases_product_id, purchases.purchase_date AS purchases_purchase_date, purchases.quantity AS purchases_quantity, purchases.cpc AS purchases_cpc 
+FROM purchases) AS anon_1]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+[2024-02-10 15:36:03.581281] Data integrity check failed. Aborting extraction.
+[2024-02-10 15:37:02.848749] PSQL database 'insurance_company' connected
+[2024-02-10 15:37:02.877062] Error during data integrity check: (psycopg2.errors.UndefinedColumn) column purchases.customer_id does not exist
+LINE 2: FROM (SELECT purchases.id AS purchases_id, purchases.custome...
+                                                   ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT purchases.id AS purchases_id, purchases.customer_id AS purchases_customer_id, purchases.product_id AS purchases_product_id, purchases.purchase_date AS purchases_purchase_date, purchases.quantity AS purchases_quantity, purchases.cpc AS purchases_cpc 
+FROM purchases) AS anon_1]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+[2024-02-10 15:37:02.877124] Data integrity check failed. Aborting extraction.
+[2024-02-10 15:38:02.181730] PSQL database 'insurance_company' connected
+[2024-02-10 15:38:02.209818] Error during data integrity check: (psycopg2.errors.UndefinedColumn) column purchases.customer_id does not exist
+LINE 2: FROM (SELECT purchases.id AS purchases_id, purchases.custome...
+                                                   ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT purchases.id AS purchases_id, purchases.customer_id AS purchases_customer_id, purchases.product_id AS purchases_product_id, purchases.purchase_date AS purchases_purchase_date, purchases.quantity AS purchases_quantity, purchases.cpc AS purchases_cpc 
+FROM purchases) AS anon_1]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+[2024-02-10 15:38:02.209861] Data integrity check failed. Aborting extraction.
+[2024-02-10 15:39:02.284646] PSQL database 'insurance_company' connected
+[2024-02-10 15:39:02.317683] Error during data integrity check: (psycopg2.errors.UndefinedColumn) column purchases.customer_id does not exist
+LINE 2: FROM (SELECT purchases.id AS purchases_id, purchases.custome...
+                                                   ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT purchases.id AS purchases_id, purchases.customer_id AS purchases_customer_id, purchases.product_id AS purchases_product_id, purchases.purchase_date AS purchases_purchase_date, purchases.quantity AS purchases_quantity, purchases.cpc AS purchases_cpc 
+FROM purchases) AS anon_1]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+[2024-02-10 15:39:02.317741] Data integrity check failed. Aborting extraction.
+[2024-02-10 15:40:02.004218] PSQL database 'insurance_company' connected
+[2024-02-10 15:40:02.029609] Error during data integrity check: (psycopg2.errors.UndefinedColumn) column purchases.customer_id does not exist
+LINE 2: FROM (SELECT purchases.id AS purchases_id, purchases.custome...
+                                                   ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT purchases.id AS purchases_id, purchases.customer_id AS purchases_customer_id, purchases.product_id AS purchases_product_id, purchases.purchase_date AS purchases_purchase_date, purchases.quantity AS purchases_quantity, purchases.cpc AS purchases_cpc 
+FROM purchases) AS anon_1]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+[2024-02-10 15:40:02.029666] Data integrity check failed. Aborting extraction.
+[2024-02-10 15:40:02.514286] PSQL database 'insurance_company' connected
+[2024-02-10 15:40:02.549279] Error during data integrity check: (psycopg2.errors.UndefinedColumn) column purchases.customer_id does not exist
+LINE 2: FROM (SELECT purchases.id AS purchases_id, purchases.custome...
+                                                   ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT purchases.id AS purchases_id, purchases.customer_id AS purchases_customer_id, purchases.product_id AS purchases_product_id, purchases.purchase_date AS purchases_purchase_date, purchases.quantity AS purchases_quantity, purchases.cpc AS purchases_cpc 
+FROM purchases) AS anon_1]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+[2024-02-10 15:40:02.549345] Data integrity check failed. Aborting extraction.
+[2024-02-10 15:41:02.708748] PSQL database 'insurance_company' connected
+[2024-02-10 15:41:02.750289] Error during data integrity check: (psycopg2.errors.UndefinedColumn) column purchases.customer_id does not exist
+LINE 2: FROM (SELECT purchases.id AS purchases_id, purchases.custome...
+                                                   ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT purchases.id AS purchases_id, purchases.customer_id AS purchases_customer_id, purchases.product_id AS purchases_product_id, purchases.purchase_date AS purchases_purchase_date, purchases.quantity AS purchases_quantity, purchases.cpc AS purchases_cpc 
+FROM purchases) AS anon_1]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+[2024-02-10 15:41:02.750342] Data integrity check failed. Aborting extraction.
+[2024-02-10 15:42:02.620948] PSQL database 'insurance_company' connected
+[2024-02-10 15:42:02.658545] Error during data integrity check: (psycopg2.errors.UndefinedColumn) column purchases.customer_id does not exist
+LINE 2: FROM (SELECT purchases.id AS purchases_id, purchases.custome...
+                                                   ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT purchases.id AS purchases_id, purchases.customer_id AS purchases_customer_id, purchases.product_id AS purchases_product_id, purchases.purchase_date AS purchases_purchase_date, purchases.quantity AS purchases_quantity, purchases.cpc AS purchases_cpc 
+FROM purchases) AS anon_1]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+[2024-02-10 15:42:02.658615] Data integrity check failed. Aborting extraction.
+[2024-02-10 15:43:02.497770] PSQL database 'insurance_company' connected
+[2024-02-10 15:43:02.521420] Error during data integrity check: (psycopg2.errors.UndefinedColumn) column purchases.customer_id does not exist
+LINE 2: FROM (SELECT purchases.id AS purchases_id, purchases.custome...
+                                                   ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT purchases.id AS purchases_id, purchases.customer_id AS purchases_customer_id, purchases.product_id AS purchases_product_id, purchases.purchase_date AS purchases_purchase_date, purchases.quantity AS purchases_quantity, purchases.cpc AS purchases_cpc 
+FROM purchases) AS anon_1]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+[2024-02-10 15:43:02.521467] Data integrity check failed. Aborting extraction.
+[2024-02-10 15:44:02.645090] PSQL database 'insurance_company' connected
+[2024-02-10 15:44:02.673418] Error during data integrity check: (psycopg2.errors.UndefinedColumn) column purchases.customer_id does not exist
+LINE 2: FROM (SELECT purchases.id AS purchases_id, purchases.custome...
+                                                   ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT purchases.id AS purchases_id, purchases.customer_id AS purchases_customer_id, purchases.product_id AS purchases_product_id, purchases.purchase_date AS purchases_purchase_date, purchases.quantity AS purchases_quantity, purchases.cpc AS purchases_cpc 
+FROM purchases) AS anon_1]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+[2024-02-10 15:44:02.673478] Data integrity check failed. Aborting extraction.
+[2024-02-10 15:45:02.615571] PSQL database 'insurance_company' connected
+[2024-02-10 15:45:02.642250] Error during data integrity check: (psycopg2.errors.UndefinedColumn) column purchases.customer_id does not exist
+LINE 2: FROM (SELECT purchases.id AS purchases_id, purchases.custome...
+                                                   ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT purchases.id AS purchases_id, purchases.customer_id AS purchases_customer_id, purchases.product_id AS purchases_product_id, purchases.purchase_date AS purchases_purchase_date, purchases.quantity AS purchases_quantity, purchases.cpc AS purchases_cpc 
+FROM purchases) AS anon_1]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+[2024-02-10 15:45:02.642357] Data integrity check failed. Aborting extraction.
+[2024-02-10 15:46:02.644483] PSQL database 'insurance_company' connected
+[2024-02-10 15:46:02.670214] Error during data integrity check: (psycopg2.errors.UndefinedColumn) column purchases.customer_id does not exist
+LINE 2: FROM (SELECT purchases.id AS purchases_id, purchases.custome...
+                                                   ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT purchases.id AS purchases_id, purchases.customer_id AS purchases_customer_id, purchases.product_id AS purchases_product_id, purchases.purchase_date AS purchases_purchase_date, purchases.quantity AS purchases_quantity, purchases.cpc AS purchases_cpc 
+FROM purchases) AS anon_1]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+[2024-02-10 15:46:02.670256] Data integrity check failed. Aborting extraction.
+[2024-02-10 15:47:02.712068] PSQL database 'insurance_company' connected
+[2024-02-10 15:47:02.736002] Error during data integrity check: (psycopg2.errors.UndefinedColumn) column purchases.customer_id does not exist
+LINE 2: FROM (SELECT purchases.id AS purchases_id, purchases.custome...
+                                                   ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT purchases.id AS purchases_id, purchases.customer_id AS purchases_customer_id, purchases.product_id AS purchases_product_id, purchases.purchase_date AS purchases_purchase_date, purchases.quantity AS purchases_quantity, purchases.cpc AS purchases_cpc 
+FROM purchases) AS anon_1]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+[2024-02-10 15:47:02.736044] Data integrity check failed. Aborting extraction.
+[2024-02-10 15:48:02.867890] PSQL database 'insurance_company' connected
+[2024-02-10 15:48:02.893844] Error during data integrity check: (psycopg2.errors.UndefinedColumn) column purchases.customer_id does not exist
+LINE 2: FROM (SELECT purchases.id AS purchases_id, purchases.custome...
+                                                   ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT purchases.id AS purchases_id, purchases.customer_id AS purchases_customer_id, purchases.product_id AS purchases_product_id, purchases.purchase_date AS purchases_purchase_date, purchases.quantity AS purchases_quantity, purchases.cpc AS purchases_cpc 
+FROM purchases) AS anon_1]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+[2024-02-10 15:48:02.893924] Data integrity check failed. Aborting extraction.
+[2024-02-10 15:49:01.799996] PSQL database 'insurance_company' connected
+[2024-02-10 15:49:01.825900] Error during data integrity check: (psycopg2.errors.UndefinedColumn) column purchases.customer_id does not exist
+LINE 2: FROM (SELECT purchases.id AS purchases_id, purchases.custome...
+                                                   ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT purchases.id AS purchases_id, purchases.customer_id AS purchases_customer_id, purchases.product_id AS purchases_product_id, purchases.purchase_date AS purchases_purchase_date, purchases.quantity AS purchases_quantity, purchases.cpc AS purchases_cpc 
+FROM purchases) AS anon_1]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+[2024-02-10 15:49:01.825949] Data integrity check failed. Aborting extraction.
+[2024-02-10 15:50:02.676472] PSQL database 'insurance_company' connected
+[2024-02-10 15:50:02.719083] Error during data integrity check: (psycopg2.errors.UndefinedColumn) column purchases.customer_id does not exist
+LINE 2: FROM (SELECT purchases.id AS purchases_id, purchases.custome...
+                                                   ^
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT purchases.id AS purchases_id, purchases.customer_id AS purchases_customer_id, purchases.product_id AS purchases_product_id, purchases.purchase_date AS purchases_purchase_date, purchases.quantity AS purchases_quantity, purchases.cpc AS purchases_cpc 
+FROM purchases) AS anon_1]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+[2024-02-10 15:50:02.719155] Data integrity check failed. Aborting extraction.

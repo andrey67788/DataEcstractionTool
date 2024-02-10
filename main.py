@@ -5,11 +5,11 @@ from sqlalchemy import create_engine, Column, Integer, String, Float, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, relationship
 
-# Create base class for declarative ORM
+
 Base = declarative_base()
 
 
-# Define the Customer class to represent the customers table
+
 class Customer(Base):
     __tablename__ = 'customers'
 
@@ -17,7 +17,7 @@ class Customer(Base):
     name = Column(String)
 
 
-# Define the Product class to represent the products table
+
 class Product(Base):
     __tablename__ = 'products'
 
@@ -26,7 +26,6 @@ class Product(Base):
     price = Column(Float)
 
 
-# Define the Purchase class to represent the purchases table
 class Purchase(Base):
     __tablename__ = 'purchases'
 
@@ -37,13 +36,13 @@ class Purchase(Base):
     quantity = Column(Integer)
     cpc = Column(Float)
 
-    # Define the relationship with the Customer and Product tables
     customer = relationship('Customer', backref='purchases')
     product = relationship('Product', backref='purchases')
 
 
 class Logs:
-    log_dir = os.path.abspath(os.path.join('.', 'logs'))
+    # log_dir = os.path.abspath(os.path.join('.', 'logs'))
+    log_dir = '/home/andrey67788/PycharmProjects/DataEcstractionTool/logs'
     message = 'Initial completed'
 
     def __init__(self):
@@ -81,14 +80,11 @@ class DataPSQL:
         try:
             logs_instance = Logs()
 
-            # Connect to the PostgreSQL database using SQLAlchemy
             db_url = f'postgresql://{DataPSQL.DB_USER}:{DataPSQL.DB_PASSWORD}@{DataPSQL.DB_HOST}:{DataPSQL.DB_PORT}/{DataPSQL.DB_NAME}'
             self.engine = create_engine(db_url)
 
-            # Create tables if not exist and bind engine to the base
             Base.metadata.create_all(self.engine)
 
-            # Create a session
             Session = sessionmaker(bind=self.engine)
             self.session = Session()
 
@@ -104,14 +100,12 @@ class DataPSQL:
             return
 
         try:
-            # Fetch data from the customers table
             customers_query_result = self.session.query(Customer.id, Customer.name).filter(Customer.id.isnot(None)).all()
             customers_df = pd.DataFrame(customers_query_result, columns=['id', 'name'])
             customers_csv_file_path = os.path.join(os.path.abspath('.'), 'extracted', 'customers.csv')
             customers_df.to_csv(customers_csv_file_path, index=False)
             logs_instance.write_to_log(f'Data from customers table extracted and saved to {customers_csv_file_path}')
 
-            # Fetch data from the products table
             products_query_result = self.session.query(Product.id, Product.type, Product.price).filter(
                 Product.id.isnot(None)).all()
             products_df = pd.DataFrame(products_query_result, columns=['id', 'name', 'price'])
@@ -119,7 +113,6 @@ class DataPSQL:
             products_df.to_csv(products_csv_file_path, index=False)
             logs_instance.write_to_log(f'Data from products table extracted and saved to {products_csv_file_path}')
 
-            # Fetch data from the purchases table
             purchases_query_result = self.session.query(Purchase.id, Purchase.customer_id, Purchase.product_id,
                                                         Purchase.purchase_date, Purchase.quantity,
                                                         Purchase.cpc).filter(
@@ -147,21 +140,18 @@ class DataIntegrityChecker:
             return False
 
         try:
-            # Check integrity for the customers table
             customers_rows_count = self.session.query(Customer).count()
             customers_null_count = self.session.query(Customer).filter(
                 (Customer.id.is_(None)) | (Customer.name.is_(None))
             ).count()
             customers_null_percentage = customers_null_count / customers_rows_count
 
-            # Check integrity for the products table
             products_rows_count = self.session.query(Product).count()
             products_null_count = self.session.query(Product).filter(
                 (Product.id.is_(None)) | (Product.type.is_(None)) | (Product.price.is_(None))
             ).count()
             products_null_percentage = products_null_count / products_rows_count
 
-            # Check integrity for the purchases table
             purchases_rows_count = self.session.query(Purchase).count()
             purchases_null_count = self.session.query(Purchase).filter(
                 (Purchase.id.is_(None)) | (Purchase.customer_id.is_(None)) | (Purchase.product_id.is_(None)) |
@@ -169,7 +159,6 @@ class DataIntegrityChecker:
             ).count()
             purchases_null_percentage = purchases_null_count / purchases_rows_count
 
-            # Log the results
             logs_instance.write_to_log(
                 f"Data integrity check completed for customers: {customers_rows_count} rows found, "
                 f"{customers_null_count} null values found. Null percentage: {customers_null_percentage:.2f}"
@@ -195,13 +184,12 @@ class DataIntegrityChecker:
         return True
 
 
-# logs file Initial
+
 logs_instance = Logs()
 
-# Establish PostgreSQL connection
 psql_connection = DataPSQL()
 if psql_connection.connect():
-    # If connection successful, perform data integrity check
+
     data_integrity_checker = DataIntegrityChecker(psql_connection.session)
     if not data_integrity_checker.check_data_integrity():
         logs_instance.write_to_log('Data integrity check failed. Aborting extraction.')
